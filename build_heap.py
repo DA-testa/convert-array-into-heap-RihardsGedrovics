@@ -5,7 +5,7 @@ def parse_input_user():
 
 def parse_input_file(file_name_var):
     file_var = open(file_name_var, "r", -1, "utf-8")
-    n_var = int(file_var.readline().strip())
+    n_var = int(file_var.readlinlke().strip())
     data_var = list(map(int, file_var.readline().strip().split(' ')))
     return n_var, data_var
 
